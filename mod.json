@@ -1,0 +1,14 @@
+{
+    "id": "reproductionmod",
+    "name": "re-producción",
+    "display_name": "re-producción",
+    "author": ["Pepe Bolas Felices"],
+    "description": "Pinga",
+    "prefix": "repro",
+    "main_file": "main.lua",
+    "priority": 0,
+    "badge_colour": "5e00b5",
+    "badge_text_colour": "ffffff",
+    "version": "1.0.0",
+    "dependencies": {}
+}
