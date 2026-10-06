@@ -28,6 +28,8 @@ SMODS.Joker {
         }
     end,
 
+    blueprint_compat = true,
+
     calculate = function(self, card, context)
 
         if context.blind then
@@ -37,7 +39,7 @@ SMODS.Joker {
             end
         end
 
-        if context.buying_card and context.card == card then
+        if context.buying_card and context.card == card and not context.blueprint then
             card.ability.extra_value = 0
             card:set_cost()
         end

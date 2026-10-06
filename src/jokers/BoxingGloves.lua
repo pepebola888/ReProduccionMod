@@ -24,6 +24,8 @@ SMODS.Joker {
         }
     end,
 
+    blueprint_compat = true,
+
     calculate = function(self, card, context)
         local retriggers = math.random(0, card.ability.extra.maxretriggers)
 
