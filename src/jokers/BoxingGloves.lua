@@ -47,3 +47,5 @@ SMODS.Joker {
         end
     end
 }
+
+Add_to_pool("j_repro_boxing_gloves", Object_joker_pool)

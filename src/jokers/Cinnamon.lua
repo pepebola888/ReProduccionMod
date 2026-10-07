@@ -32,7 +32,7 @@ SMODS.Joker {
 
     calculate = function(self, card, context)
 
-        if context.blind then
+        if context.blind and not context.blueprint then
             card.ability.extra.uses = card.ability.extra.uses + card.ability.extra.adduses
             if card.ability.extra.uses > card.ability.extra.maxuses then
                 card.ability.extra.uses = card.ability.extra.maxuses

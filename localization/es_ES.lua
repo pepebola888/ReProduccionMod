@@ -1,5 +1,14 @@
 return {
     descriptions = {
+        Other = {
+            repro_animal_joker_desc = {
+                name = "Mascota",
+                text = {
+                    "este es un comodin {C:attention}Mascota{} ",
+                    "muy lindo/linda",
+                }
+            }
+        },
         Blind = {
             bl_repro_pepe_domain = {
                 name = "Pepe's Domain",
@@ -63,7 +72,7 @@ return {
                 name = "Perro de Antimateria",
                 text = {
                     "{C:attention}+#3#{} ranuras de comodines pero",
-                    "tiene una probabilidad de {C:green}1 en #2#{}",
+                    "tiene una probabilidad de {C:green}#4# en #2#{}",
                     "de {C:mult}EXPLOTAR{} por casi cualquier cosa",
                     "{C:inactive}explota al tener 6 de 7 comodines",
                     "{C:inactive}sus efectos solo se aplicaran si tiene dos comodines al lado"
@@ -80,6 +89,12 @@ return {
                 name = "La Criatura",
                 text = {
                     "multiplica el puntaje requerido de la ciega por {C:attention}#1#",
+                }
+            },
+            j_repro_princess = {
+                name = "Princesa",
+                text = {
+                    "{X:mult,C:white}X#1#{} Mult por cada {C:attention}Mascota{} que poseas",
                 }
             },
         },

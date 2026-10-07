@@ -11,18 +11,22 @@ SMODS.Joker {
         is_animal = true,
         extra = {
             xmult = 2,
-            xplodeability = 50,
+            xplodeability = 100,
             slots = 2,
         }
     },
     rarity = 2,
     cost = 10,
     loc_vars = function(self, info_queue, card)
+
+        table.insert(info_queue, { key = 'repro_animal_joker_desc', set = 'Other' })
+
         return {
             vars = {
                 card.ability.extra.xmult,
                 card.ability.extra.xplodeability,
                 card.ability.extra.slots,
+                G.GAME.probabilities.normal
             }
         }
     end,
@@ -36,7 +40,7 @@ SMODS.Joker {
     end,
 
     calculate = function(self, card, context)
-        local Action = math.random(1, card.ability.extra.xplodeability)
+        local Action = math.random(G.GAME.probabilities.normal, card.ability.extra.xplodeability)
         
         local action_occurred = context.joker_main
             or context.discard

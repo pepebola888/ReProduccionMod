@@ -23,6 +23,9 @@ SMODS.Joker {
     blueprint_compat = true,
 
     loc_vars = function(self, info_queue, card)
+
+        table.insert(info_queue, { key = 'repro_animal_joker_desc', set = 'Other' })
+
         return {
             vars = {
                 card.ability.extra.chip_mult,

@@ -2,6 +2,7 @@
 
 Animal_joker_pool = {}
 Idiot_joker_pool = {}
+Object_joker_pool = {}
 Cool_consumables_pool = {}
 
 function Add_to_pool(key, pool)

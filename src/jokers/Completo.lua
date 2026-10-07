@@ -50,10 +50,12 @@ SMODS.Joker {
             end
 
             return {
-                dollars = card.ability.extra.dollars
+                dollars = card.ability.extra.dollars,
+                xchips = card.ability.extra.xchips,
+                xmult = card.ability.extra.xmult
             }
         end
     end
 }
 
-Add_to_pool("j_repro_cinnamon", Idiot_joker_pool)
+Add_to_pool("j_repro_completo", Object_joker_pool)

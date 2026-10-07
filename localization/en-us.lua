@@ -1,5 +1,14 @@
 return {
     descriptions = {
+        Other = {
+            repro_animal_joker_desc = {
+                name = "Pet",
+                text = {
+                    "this is a {C:attention}Pet{} joker",
+                    "very cute",
+                }
+            }
+        },
         Blind = {
             bl_repro_pepe_domain = {
                 name = "Pepe's Domain",
@@ -62,7 +71,7 @@ return {
                 name = "Antimatter Dog",
                 text = {
                     "Adds {C:attention}+#3#{} joker slots but",
-                    "Has a {C:green}1 in #2#{} chance",
+                    "Has a {C:green}#4# in #2#{} chance",
                     "To {C:mult}EXPLODE{} for like almost everything",
                     "{C:inactive}side effect include:",
                     "{C:inactive}immediate explosion upon having 6 out of 7 jokers",
@@ -80,6 +89,12 @@ return {
                 name = "The Creature",
                 text = {
                     "multiplies the blind's required score by {C:attention}#1#",
+                }
+            },
+            j_repro_princess = {
+                name = "Princess",
+                text = {
+                    "{X:mult,C:white}X#1#{} Mult for every {C:attention}Pet{} you own",
                 }
             },
         },
@@ -104,5 +119,5 @@ return {
             repro_furrusbooster = "furrus",
             repro_pinwinbooster = "pinwin's pack",
         }
-    }
+    },
 }
