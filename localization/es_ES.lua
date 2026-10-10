@@ -88,7 +88,7 @@ return {
             j_repro_the_creature = {
                 name = "La Criatura",
                 text = {
-                    "multiplica el puntaje requerido de la ciega por {C:attention}#1#",
+                    "reduce el puntaje requerido de la ciega a la mitad",
                 }
             },
             j_repro_princess = {

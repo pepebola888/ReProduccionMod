@@ -17,6 +17,9 @@ SMODS.Joker {
     },
     rarity = 2,
     cost = 10,
+
+    blueprint_compat = false,
+
     loc_vars = function(self, info_queue, card)
 
         table.insert(info_queue, { key = 'repro_animal_joker_desc', set = 'Other' })

@@ -88,13 +88,23 @@ return {
             j_repro_the_creature = {
                 name = "The Creature",
                 text = {
-                    "multiplies the blind's required score by {C:attention}#1#",
+                    "halves the blind's required score",
                 }
             },
             j_repro_princess = {
                 name = "Princess",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult for every {C:attention}Pet{} you own",
+                }
+            },
+            j_repro_completo = {
+                name = "Completo",
+                text = {
+                    "{C:money}+$#1#{} Dollars",
+                    "{X:chips,C:white}X#2#{} Chips",
+                    "{X:mult,C:white}X#3#{} Mult",
+                    "for every played hand",
+                    "{C:inactive}#4#/#5# uses left"
                 }
             },
         },
