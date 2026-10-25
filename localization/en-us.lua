@@ -7,6 +7,14 @@ return {
                     "this is a {C:attention}Pet{} joker",
                     "very cute",
                 }
+            },
+            repro_idiot_joker_desc = {
+                name = "Reproductive member",
+                text = {
+                    "this is a {C:attention}Reproductive member{} joker",
+                    "this characteristic is granted to members",
+                    "of the re-producción server",
+                }
             }
         },
         Blind = {
@@ -22,20 +30,8 @@ return {
             j_repro_pepe = {
                 name = "Pepe Bolas Felices",
                 text = {
-                    {"has a {C:green}2 in 3{} chance",
-                    "(if it is a modded or face playing card this will always happen)",
-                    "to give {C:chips}+#1#{} Chips",
-                    "and {C:mult}+#2#{} Mult per card",
-                    "but a {C:attention}1 in 3{} chance to be sad",
-                    "(otherwhise, he'll be happy)"},
-                    {
-                        "{C:attention}Happy:",
-                        "no debuffs"
-                    },
-                    {
-                        "{C:blue}Sad:",
-                        "{X:mult,C:white}x#3#{} Mult"
-                    }
+                    "{C:green}#2# in #3#{} chance",
+                    "for each joker to be retriggered {C:attention}#1#{} times",
                 }
             },
             j_repro_fungus = {
@@ -47,8 +43,8 @@ return {
             j_repro_pinwin = {
                 name = "pinwino",
                 text = {
-                    "{C:chips}+#1#{} chips if current blind is normal",
-                    "{X:mult,C:white}x#2#{} mult if current blind is a boss",
+                    "{C:chips}+#1#{} chips and {X:mult,C:white}x#2#{} Mult",
+                    "for every reproductive member joker you own",
                 }
             },
             j_repro_carliz = {
@@ -107,6 +103,16 @@ return {
                     "{C:inactive}#4#/#5# uses left"
                 }
             },
+            j_repro_linguine = {
+                name = "Linguine",
+                text = {
+                    "{X:chips,C:white}X#2#{} Chips{} and {X:mult,C:white}X#3#{} Mult{}",
+                    "For every scored card",
+                    "{C:attention}level #1#",
+                    "{C:inactive}+#4# XChips and +#5# XMult per upgrade",
+                    "{C:inactive}Can be upgraded using the linguine upgrader 3000",
+                }
+            },
         },
         Tarot = {
             c_repro_adiosadiosnopasesnopases = {
@@ -119,6 +125,13 @@ return {
                 name = "you should die, now!!!",
                 text = {
                     "destroys up to 3 selected cards"
+                }
+            },
+            c_repro_linguine_upgrader = {
+                name = "Linguine Upgrader 3000",
+                text = {
+                    "takes {C:money}$#1#{} from you",
+                    "in exchange for an upgrade to the selected Linguine joker"
                 }
             },
         }

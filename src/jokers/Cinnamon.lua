@@ -18,6 +18,9 @@ SMODS.Joker {
     rarity = 2,
     cost = 10,
     loc_vars = function(self, info_queue, card)
+        table.insert(info_queue, { key = 'repro_idiot_joker_desc', set = 'Other' })
+
+
         return {
             vars = {
                 card.ability.extra.dollars,
@@ -60,4 +63,4 @@ SMODS.Joker {
     end
 }
 
-Add_to_pool("j_repro_cinnamon", Idiot_joker_pool)
+Add_to_pool("j_repro_cinnamon", Idiot_joker_pool, true)

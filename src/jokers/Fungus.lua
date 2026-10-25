@@ -9,7 +9,7 @@ SMODS.Joker {
         unlocked = true,
         discovered = true,
         extra = {
-            xmult = 1.2
+            xmult = 1.5
         }
     },
     rarity = 2,
@@ -18,6 +18,9 @@ SMODS.Joker {
     blueprint_compat = true,
 
     loc_vars = function(self, info_queue, card)
+
+                table.insert(info_queue, { key = 'repro_idiot_joker_desc', set = 'Other' })
+
         return {
             vars = {
                 card.ability.extra.xmult,
@@ -44,4 +47,4 @@ SMODS.Joker {
     end
 }
 
-Add_to_pool("j_repro_fungus", Idiot_joker_pool)
+Add_to_pool("j_repro_fungus", Idiot_joker_pool, true)

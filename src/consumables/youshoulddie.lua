@@ -7,6 +7,8 @@ SMODS.Consumable {
         y = 0
     },
 
+    cost = 5,
+
     config = {
         extra = {
             maxcards = 3

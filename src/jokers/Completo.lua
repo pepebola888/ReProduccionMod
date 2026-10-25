@@ -58,4 +58,4 @@ SMODS.Joker {
     end
 }
 
-Add_to_pool("j_repro_completo", Object_joker_pool)
+Add_to_pool("j_repro_completo", Object_joker_pool, true)

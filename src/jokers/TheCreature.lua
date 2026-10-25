@@ -48,4 +48,4 @@ SMODS.Joker {
     end
 }
 
-Add_to_pool("j_repro_the_creature", Animal_joker_pool)
+Add_to_pool("j_repro_the_creature", Animal_joker_pool, true)

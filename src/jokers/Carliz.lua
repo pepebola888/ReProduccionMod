@@ -18,6 +18,10 @@ SMODS.Joker {
     blueprint_compat = true,
 
     loc_vars = function(self, info_queue, card)
+
+        table.insert(info_queue, { key = 'repro_idiot_joker_desc', set = 'Other' })
+
+
         return {
             vars = {
                 card.ability.extra.repetitions
@@ -49,4 +53,4 @@ SMODS.Joker {
     end
 }
 
-Add_to_pool("j_repro_carliz", Idiot_joker_pool)
+Add_to_pool("j_repro_carliz", Idiot_joker_pool, true)

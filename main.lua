@@ -5,11 +5,41 @@ Idiot_joker_pool = {}
 Object_joker_pool = {}
 Cool_consumables_pool = {}
 
-function Add_to_pool(key, pool)
+All_jokers_pool = {}
+
+function Add_to_pool(key, pool, isJoker)
     pool[key] = true
-    --table.insert(pool, #pool+1, key)
+    if isJoker then
+        All_jokers_pool[key] = true
+    end
 end
 
+
+function Has_joker(joker_key)
+        if not G.jokers or not G.jokers.cards then
+        return false
+    end
+    for _, joker in ipairs(G.jokers.cards) do
+        if joker.config.center.key == joker_key then
+            return true
+        end
+    end
+
+    return false
+end
+
+function Has_consumable(consumable_key)
+    if not G.consumeables or not G.consumeables.cards then
+        return false
+    end
+    for _, consumable in ipairs(G.consumeables.cards) do
+        if consumable.config.center.key == consumable_key then
+            return true
+        end
+    end
+
+    return false
+end
 
 SMODS.current_mod.optional_features = {
     retrigger_joker = true

@@ -7,6 +7,7 @@ SMODS.Consumable {
         y = 0
     },
 
+    cost = 12,
 
     can_use = function(self, card)
         return G.jokers and #G.jokers.highlighted == 1

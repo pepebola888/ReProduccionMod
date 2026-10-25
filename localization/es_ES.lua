@@ -7,6 +7,14 @@ return {
                     "este es un comodin {C:attention}Mascota{} ",
                     "muy lindo/linda",
                 }
+            },
+            repro_idiot_joker_desc = {
+                name = "Miembro Reproductivo",
+                text = {
+                    "este es un comodin {C:attention}Miembro Reproductivo{}",
+                    "esta caracteristica se le otorga a los miembros",
+                    "del server de re-producción",
+                }
             }
         },
         Blind = {
@@ -22,20 +30,8 @@ return {
             j_repro_pepe = {
                 name = "Pepe Bolas Felices",
                 text = {
-                    {"tiene una probabilidad de {C:green}2 en 3{}",
-                    "(Si es una carta modeada o de figura esto siempre pasara)",
-                    "de dar {C:chips}+#1#{} Chips",
-                    "y {C:mult}+#2#{} Mult por carta",
-                    "pero una probabilidad de {C:attention}1 en 3{} de estar triste",
-                    "(si no, estara feliz)"},
-                    {
-                        "{C:attention}feliz:",
-                        "sin effectos negativos"
-                    },
-                    {
-                        "{C:blue}triste:",
-                        "{X:mult,C:white}x#3#{} Mult"
-                    }
+                    "hay una probabilidad de {C:green}#2# en #3#{}",
+                    "por cada comodin de ser reactivado {C:attention}#1#{} veces",
                 }
             },
             j_repro_fungus = {
@@ -47,8 +43,8 @@ return {
             j_repro_pinwin = {
                 name = "pinwino",
                 text = {
-                    "{C:chips}+#1#{} chips si la ciega es normal",
-                    "{X:mult,C:white}x#2#{} mult si la ciega es especialita",
+                    "{C:chips}+#1#{} chips y {X:mult,C:white}x#2#{} Mult",
+                    "por cada comoding de miembro reproductivo que poseas",
                 }
             },
             j_repro_carliz = {
@@ -97,6 +93,26 @@ return {
                     "{X:mult,C:white}X#1#{} Mult por cada {C:attention}Mascota{} que poseas",
                 }
             },
+            j_repro_completo = {
+                name = "Completo",
+                text = {
+                    "{C:money}+$#1#{} dollares",
+                    "{X:chips,C:white}X#2#{} Chips",
+                    "{X:mult,C:white}X#3#{} Mult",
+                    "por cada mano jugada",
+                    "{C:inactive}#4#/#5# usos restantes"
+                }
+            },
+            j_repro_linguine = {
+                name = "Linguine",
+                text = {
+                    "{X:chips,C:white}X#2#{} Chips{} y {X:mult,C:white}X#3#{} Mult{}",
+                    "por cada carta jugada",
+                    "{C:attention}nivel #1#",
+                    "{C:inactive}+#4# XChips y +#5# XMult por nivel",
+                    "{C:inactive}se puede mejorar con el Mejorador para Linguine 3000",
+                }
+            },
         },
         Tarot = {
             c_repro_adiosadiosnopasesnopases = {
@@ -109,6 +125,13 @@ return {
                 name = "matate carliz",
                 text = {
                     "destruye hasta 3 cartas seleccionadas"
+                }
+            },
+            c_repro_linguine_upgrader = {
+                name = "Mejorador para Linguine 3000",
+                text = {
+                    "te quita {C:money}$#1#{} a cambio de ",
+                    "una mejora para el comodin Linguine seleccionado"
                 }
             },
         }
